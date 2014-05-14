@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBB502DD1923B4D1003BE2DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB502DC1923B4D1003BE2DB /* Foundation.framework */; };
+		FBB502DF1923B4D1003BE2DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB502DE1923B4D1003BE2DB /* CoreGraphics.framework */; };
+		FBB502E11923B4D1003BE2DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB502E01923B4D1003BE2DB /* UIKit.framework */; };
+		FBB502E31923B4D1003BE2DB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB502E21923B4D1003BE2DB /* CoreData.framework */; };
+		FBB502E91923B4D1003BE2DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBB502E71923B4D1003BE2DB /* InfoPlist.strings */; };
+		FBB502EB1923B4D1003BE2DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB502EA1923B4D1003BE2DB /* main.m */; };
+		FBB502EF1923B4D1003BE2DB /* ARCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB502EE1923B4D1003BE2DB /* ARCAppDelegate.m */; };
+		FBB502F21923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBB502F01923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodeld */; };
+		FBB502F41923B4D1003BE2DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB502F31923B4D1003BE2DB /* Images.xcassets */; };
+		FBB502FB1923B4D1003BE2DB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB502FA1923B4D1003BE2DB /* XCTest.framework */; };
+		FBB502FC1923B4D1003BE2DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB502DC1923B4D1003BE2DB /* Foundation.framework */; };
+		FBB502FD1923B4D1003BE2DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB502E01923B4D1003BE2DB /* UIKit.framework */; };
+		FBB502FE1923B4D1003BE2DB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB502E21923B4D1003BE2DB /* CoreData.framework */; };
+		FBB503061923B4D1003BE2DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBB503041923B4D1003BE2DB /* InfoPlist.strings */; };
+		FBB503081923B4D1003BE2DB /* ARCHomeImprovementTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB503071923B4D1003BE2DB /* ARCHomeImprovementTrackerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBB502FF1923B4D1003BE2DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBB502D11923B4D1003BE2DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBB502D81923B4D1003BE2DB;
+			remoteInfo = ARCHomeImprovementTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBB502D91923B4D1003BE2DB /* ARCHomeImprovementTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCHomeImprovementTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB502DC1923B4D1003BE2DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FBB502DE1923B4D1003BE2DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FBB502E01923B4D1003BE2DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FBB502E21923B4D1003BE2DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FBB502E61923B4D1003BE2DB /* ARCHomeImprovementTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARCHomeImprovementTracker-Info.plist"; sourceTree = "<group>"; };
+		FBB502E81923B4D1003BE2DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FBB502EA1923B4D1003BE2DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBB502EC1923B4D1003BE2DB /* ARCHomeImprovementTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARCHomeImprovementTracker-Prefix.pch"; sourceTree = "<group>"; };
+		FBB502ED1923B4D1003BE2DB /* ARCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCAppDelegate.h; sourceTree = "<group>"; };
+		FBB502EE1923B4D1003BE2DB /* ARCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCAppDelegate.m; sourceTree = "<group>"; };
+		FBB502F11923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ARCHomeImprovementTracker.xcdatamodel; sourceTree = "<group>"; };
+		FBB502F31923B4D1003BE2DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FBB502F91923B4D1003BE2DB /* ARCHomeImprovementTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCHomeImprovementTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB502FA1923B4D1003BE2DB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FBB503031923B4D1003BE2DB /* ARCHomeImprovementTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARCHomeImprovementTrackerTests-Info.plist"; sourceTree = "<group>"; };
+		FBB503051923B4D1003BE2DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FBB503071923B4D1003BE2DB /* ARCHomeImprovementTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCHomeImprovementTrackerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBB502D61923B4D1003BE2DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB502DF1923B4D1003BE2DB /* CoreGraphics.framework in Frameworks */,
+				FBB502E31923B4D1003BE2DB /* CoreData.framework in Frameworks */,
+				FBB502E11923B4D1003BE2DB /* UIKit.framework in Frameworks */,
+				FBB502DD1923B4D1003BE2DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB502F61923B4D1003BE2DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB502FB1923B4D1003BE2DB /* XCTest.framework in Frameworks */,
+				FBB502FE1923B4D1003BE2DB /* CoreData.framework in Frameworks */,
+				FBB502FD1923B4D1003BE2DB /* UIKit.framework in Frameworks */,
+				FBB502FC1923B4D1003BE2DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBB502D01923B4D1003BE2DB = {
+			isa = PBXGroup;
+			children = (
+				FBB502E41923B4D1003BE2DB /* ARCHomeImprovementTracker */,
+				FBB503011923B4D1003BE2DB /* ARCHomeImprovementTrackerTests */,
+				FBB502DB1923B4D1003BE2DB /* Frameworks */,
+				FBB502DA1923B4D1003BE2DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBB502DA1923B4D1003BE2DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBB502D91923B4D1003BE2DB /* ARCHomeImprovementTracker.app */,
+				FBB502F91923B4D1003BE2DB /* ARCHomeImprovementTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBB502DB1923B4D1003BE2DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBB502DC1923B4D1003BE2DB /* Foundation.framework */,
+				FBB502DE1923B4D1003BE2DB /* CoreGraphics.framework */,
+				FBB502E01923B4D1003BE2DB /* UIKit.framework */,
+				FBB502E21923B4D1003BE2DB /* CoreData.framework */,
+				FBB502FA1923B4D1003BE2DB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBB502E41923B4D1003BE2DB /* ARCHomeImprovementTracker */ = {
+			isa = PBXGroup;
+			children = (
+				FBB502ED1923B4D1003BE2DB /* ARCAppDelegate.h */,
+				FBB502EE1923B4D1003BE2DB /* ARCAppDelegate.m */,
+				FBB502F31923B4D1003BE2DB /* Images.xcassets */,
+				FBB502F01923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodeld */,
+				FBB502E51923B4D1003BE2DB /* Supporting Files */,
+			);
+			path = ARCHomeImprovementTracker;
+			sourceTree = "<group>";
+		};
+		FBB502E51923B4D1003BE2DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBB502E61923B4D1003BE2DB /* ARCHomeImprovementTracker-Info.plist */,
+				FBB502E71923B4D1003BE2DB /* InfoPlist.strings */,
+				FBB502EA1923B4D1003BE2DB /* main.m */,
+				FBB502EC1923B4D1003BE2DB /* ARCHomeImprovementTracker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBB503011923B4D1003BE2DB /* ARCHomeImprovementTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBB503071923B4D1003BE2DB /* ARCHomeImprovementTrackerTests.m */,
+				FBB503021923B4D1003BE2DB /* Supporting Files */,
+			);
+			path = ARCHomeImprovementTrackerTests;
+			sourceTree = "<group>";
+		};
+		FBB503021923B4D1003BE2DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBB503031923B4D1003BE2DB /* ARCHomeImprovementTrackerTests-Info.plist */,
+				FBB503041923B4D1003BE2DB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBB502D81923B4D1003BE2DB /* ARCHomeImprovementTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB5030B1923B4D1003BE2DB /* Build configuration list for PBXNativeTarget "ARCHomeImprovementTracker" */;
+			buildPhases = (
+				FBB502D51923B4D1003BE2DB /* Sources */,
+				FBB502D61923B4D1003BE2DB /* Frameworks */,
+				FBB502D71923B4D1003BE2DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARCHomeImprovementTracker;
+			productName = ARCHomeImprovementTracker;
+			productReference = FBB502D91923B4D1003BE2DB /* ARCHomeImprovementTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBB502F81923B4D1003BE2DB /* ARCHomeImprovementTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB5030E1923B4D1003BE2DB /* Build configuration list for PBXNativeTarget "ARCHomeImprovementTrackerTests" */;
+			buildPhases = (
+				FBB502F51923B4D1003BE2DB /* Sources */,
+				FBB502F61923B4D1003BE2DB /* Frameworks */,
+				FBB502F71923B4D1003BE2DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBB503001923B4D1003BE2DB /* PBXTargetDependency */,
+			);
+			name = ARCHomeImprovementTrackerTests;
+			productName = ARCHomeImprovementTrackerTests;
+			productReference = FBB502F91923B4D1003BE2DB /* ARCHomeImprovementTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBB502D11923B4D1003BE2DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ARC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Actions and Results consulting";
+				TargetAttributes = {
+					FBB502F81923B4D1003BE2DB = {
+						TestTargetID = FBB502D81923B4D1003BE2DB;
+					};
+				};
+			};
+			buildConfigurationList = FBB502D41923B4D1003BE2DB /* Build configuration list for PBXProject "ARCHomeImprovementTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FBB502D01923B4D1003BE2DB;
+			productRefGroup = FBB502DA1923B4D1003BE2DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBB502D81923B4D1003BE2DB /* ARCHomeImprovementTracker */,
+				FBB502F81923B4D1003BE2DB /* ARCHomeImprovementTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBB502D71923B4D1003BE2DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB502E91923B4D1003BE2DB /* InfoPlist.strings in Resources */,
+				FBB502F41923B4D1003BE2DB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB502F71923B4D1003BE2DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB503061923B4D1003BE2DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBB502D51923B4D1003BE2DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB502F21923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodeld in Sources */,
+				FBB502EB1923B4D1003BE2DB /* main.m in Sources */,
+				FBB502EF1923B4D1003BE2DB /* ARCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB502F51923B4D1003BE2DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB503081923B4D1003BE2DB /* ARCHomeImprovementTrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBB503001923B4D1003BE2DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBB502D81923B4D1003BE2DB /* ARCHomeImprovementTracker */;
+			targetProxy = FBB502FF1923B4D1003BE2DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBB502E71923B4D1003BE2DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBB502E81923B4D1003BE2DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FBB503041923B4D1003BE2DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBB503051923B4D1003BE2DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBB503091923B4D1003BE2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBB5030A1923B4D1003BE2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBB5030C1923B4D1003BE2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARCHomeImprovementTracker/ARCHomeImprovementTracker-Prefix.pch";
+				INFOPLIST_FILE = "ARCHomeImprovementTracker/ARCHomeImprovementTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FBB5030D1923B4D1003BE2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARCHomeImprovementTracker/ARCHomeImprovementTracker-Prefix.pch";
+				INFOPLIST_FILE = "ARCHomeImprovementTracker/ARCHomeImprovementTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FBB5030F1923B4D1003BE2DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ARCHomeImprovementTracker.app/ARCHomeImprovementTracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARCHomeImprovementTracker/ARCHomeImprovementTracker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ARCHomeImprovementTrackerTests/ARCHomeImprovementTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FBB503101923B4D1003BE2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ARCHomeImprovementTracker.app/ARCHomeImprovementTracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARCHomeImprovementTracker/ARCHomeImprovementTracker-Prefix.pch";
+				INFOPLIST_FILE = "ARCHomeImprovementTrackerTests/ARCHomeImprovementTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBB502D41923B4D1003BE2DB /* Build configuration list for PBXProject "ARCHomeImprovementTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB503091923B4D1003BE2DB /* Debug */,
+				FBB5030A1923B4D1003BE2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB5030B1923B4D1003BE2DB /* Build configuration list for PBXNativeTarget "ARCHomeImprovementTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB5030C1923B4D1003BE2DB /* Debug */,
+				FBB5030D1923B4D1003BE2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBB5030E1923B4D1003BE2DB /* Build configuration list for PBXNativeTarget "ARCHomeImprovementTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB5030F1923B4D1003BE2DB /* Debug */,
+				FBB503101923B4D1003BE2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FBB502F01923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FBB502F11923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodel */,
+			);
+			currentVersion = FBB502F11923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodel */;
+			path = ARCHomeImprovementTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FBB502D11923B4D1003BE2DB /* Project object */;
+}
