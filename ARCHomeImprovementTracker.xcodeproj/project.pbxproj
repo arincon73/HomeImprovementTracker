@@ -22,6 +22,10 @@
 		FBB502FE1923B4D1003BE2DB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB502E21923B4D1003BE2DB /* CoreData.framework */; };
 		FBB503061923B4D1003BE2DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBB503041923B4D1003BE2DB /* InfoPlist.strings */; };
 		FBB503081923B4D1003BE2DB /* ARCHomeImprovementTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB503071923B4D1003BE2DB /* ARCHomeImprovementTrackerTests.m */; };
+		FBB503121923B538003BE2DB /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB503111923B538003BE2DB /* Storyboard.storyboard */; };
+		FBB503151923B8E2003BE2DB /* ARCProjectListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB503141923B8E2003BE2DB /* ARCProjectListTableViewController.m */; };
+		FBB503181924EE6A003BE2DB /* ARCAddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB503171924EE6A003BE2DB /* ARCAddProjectViewController.m */; };
+		FBB5031B192550BA003BE2DB /* Projects.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB5031A192550BA003BE2DB /* Projects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		FBB503031923B4D1003BE2DB /* ARCHomeImprovementTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARCHomeImprovementTrackerTests-Info.plist"; sourceTree = "<group>"; };
 		FBB503051923B4D1003BE2DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FBB503071923B4D1003BE2DB /* ARCHomeImprovementTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCHomeImprovementTrackerTests.m; sourceTree = "<group>"; };
+		FBB503111923B538003BE2DB /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
+		FBB503131923B8E2003BE2DB /* ARCProjectListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCProjectListTableViewController.h; sourceTree = "<group>"; };
+		FBB503141923B8E2003BE2DB /* ARCProjectListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCProjectListTableViewController.m; sourceTree = "<group>"; };
+		FBB503161924EE6A003BE2DB /* ARCAddProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCAddProjectViewController.h; sourceTree = "<group>"; };
+		FBB503171924EE6A003BE2DB /* ARCAddProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCAddProjectViewController.m; sourceTree = "<group>"; };
+		FBB50319192550BA003BE2DB /* Projects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Projects.h; sourceTree = "<group>"; };
+		FBB5031A192550BA003BE2DB /* Projects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Projects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +95,7 @@
 		FBB502D01923B4D1003BE2DB = {
 			isa = PBXGroup;
 			children = (
+				FBB5031C192550E6003BE2DB /* Core Data */,
 				FBB502E41923B4D1003BE2DB /* ARCHomeImprovementTracker */,
 				FBB503011923B4D1003BE2DB /* ARCHomeImprovementTrackerTests */,
 				FBB502DB1923B4D1003BE2DB /* Frameworks */,
@@ -115,10 +127,14 @@
 		FBB502E41923B4D1003BE2DB /* ARCHomeImprovementTracker */ = {
 			isa = PBXGroup;
 			children = (
+				FBB503111923B538003BE2DB /* Storyboard.storyboard */,
+				FBB503161924EE6A003BE2DB /* ARCAddProjectViewController.h */,
+				FBB503171924EE6A003BE2DB /* ARCAddProjectViewController.m */,
+				FBB503131923B8E2003BE2DB /* ARCProjectListTableViewController.h */,
+				FBB503141923B8E2003BE2DB /* ARCProjectListTableViewController.m */,
 				FBB502ED1923B4D1003BE2DB /* ARCAppDelegate.h */,
 				FBB502EE1923B4D1003BE2DB /* ARCAppDelegate.m */,
 				FBB502F31923B4D1003BE2DB /* Images.xcassets */,
-				FBB502F01923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodeld */,
 				FBB502E51923B4D1003BE2DB /* Supporting Files */,
 			);
 			path = ARCHomeImprovementTracker;
@@ -151,6 +167,17 @@
 				FBB503041923B4D1003BE2DB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBB5031C192550E6003BE2DB /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				FBB5031A192550BA003BE2DB /* Projects.m */,
+				FBB502F01923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodeld */,
+				FBB50319192550BA003BE2DB /* Projects.h */,
+			);
+			name = "Core Data";
+			path = ARCHomeImprovementTracker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +258,7 @@
 			files = (
 				FBB502E91923B4D1003BE2DB /* InfoPlist.strings in Resources */,
 				FBB502F41923B4D1003BE2DB /* Images.xcassets in Resources */,
+				FBB503121923B538003BE2DB /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBB502F21923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodeld in Sources */,
+				FBB503181924EE6A003BE2DB /* ARCAddProjectViewController.m in Sources */,
 				FBB502EB1923B4D1003BE2DB /* main.m in Sources */,
+				FBB503151923B8E2003BE2DB /* ARCProjectListTableViewController.m in Sources */,
 				FBB502EF1923B4D1003BE2DB /* ARCAppDelegate.m in Sources */,
+				FBB5031B192550BA003BE2DB /* Projects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
