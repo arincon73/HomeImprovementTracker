@@ -26,6 +26,7 @@
 		FBB503151923B8E2003BE2DB /* ARCProjectListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB503141923B8E2003BE2DB /* ARCProjectListTableViewController.m */; };
 		FBB503181924EE6A003BE2DB /* ARCAddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB503171924EE6A003BE2DB /* ARCAddProjectViewController.m */; };
 		FBB5031B192550BA003BE2DB /* Projects.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB5031A192550BA003BE2DB /* Projects.m */; };
+		FBB5031F192CEEDB003BE2DB /* ARCProjectDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB5031E192CEEDB003BE2DB /* ARCProjectDetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		FBB503171924EE6A003BE2DB /* ARCAddProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCAddProjectViewController.m; sourceTree = "<group>"; };
 		FBB50319192550BA003BE2DB /* Projects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Projects.h; sourceTree = "<group>"; };
 		FBB5031A192550BA003BE2DB /* Projects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Projects.m; sourceTree = "<group>"; };
+		FBB5031D192CEEDB003BE2DB /* ARCProjectDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCProjectDetailVC.h; sourceTree = "<group>"; };
+		FBB5031E192CEEDB003BE2DB /* ARCProjectDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCProjectDetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				FBB503171924EE6A003BE2DB /* ARCAddProjectViewController.m */,
 				FBB503131923B8E2003BE2DB /* ARCProjectListTableViewController.h */,
 				FBB503141923B8E2003BE2DB /* ARCProjectListTableViewController.m */,
+				FBB5031D192CEEDB003BE2DB /* ARCProjectDetailVC.h */,
+				FBB5031E192CEEDB003BE2DB /* ARCProjectDetailVC.m */,
 				FBB502ED1923B4D1003BE2DB /* ARCAppDelegate.h */,
 				FBB502EE1923B4D1003BE2DB /* ARCAppDelegate.m */,
 				FBB502F31923B4D1003BE2DB /* Images.xcassets */,
@@ -279,6 +284,7 @@
 			files = (
 				FBB502F21923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodeld in Sources */,
 				FBB503181924EE6A003BE2DB /* ARCAddProjectViewController.m in Sources */,
+				FBB5031F192CEEDB003BE2DB /* ARCProjectDetailVC.m in Sources */,
 				FBB502EB1923B4D1003BE2DB /* main.m in Sources */,
 				FBB503151923B8E2003BE2DB /* ARCProjectListTableViewController.m in Sources */,
 				FBB502EF1923B4D1003BE2DB /* ARCAppDelegate.m in Sources */,

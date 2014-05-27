@@ -9,6 +9,7 @@
 #import "ARCProjectListTableViewController.h"
 #import "ARCAddProjectViewController.h"
 #import "ARCAppDelegate.h"
+#import "ARCProjectDetailVC.h"
 
 @interface ARCProjectListTableViewController ()
 
@@ -158,8 +159,18 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    ARCAddProjectViewController *addProjectViewController = [segue destinationViewController];
-    [addProjectViewController setProjectListTableViewController:self];
+    if ([[segue identifier] isEqualToString:@"AddProjectSegue"])
+    {
+        ARCAddProjectViewController *addProjectViewController = [segue destinationViewController];
+        [addProjectViewController setProjectListTableViewController:self];
+    }
+    else if ([[segue identifier] isEqualToString:@"ProjectDetailSegue"])
+    {
+        NSIndexPath *selectedRow = [[self tableView] indexPathForSelectedRow];
+        Projects *selectedProject = [projectArray objectAtIndex:[selectedRow row]];
+        ARCProjectDetailVC *projectDetailVC = [segue destinationViewController];
+        projectDetailVC.project = selectedProject;
+    }
 };
 
 
