@@ -9,6 +9,7 @@
 #import "ARCAddProjectViewController.h"
 #import "Projects.h"
 #import "ARCAppDelegate.h"
+#import "ARCCalendarUtil.h"
 
 @interface ARCAddProjectViewController ()
 
@@ -62,6 +63,8 @@
 */
 
 - (IBAction)addProjectButtonPressed:(id)sender {
+    
+    if (sender != self.addProjectButton) return;
     NSString *newProjectName = [projectTextField text];
     NSDate *newProjectStartDate = [projectStartDateField date];
     
@@ -80,6 +83,26 @@
 
     
     [projectListTableViewController addProject:newProject];
+    
+    
+    // Add item to calendar
+    [ARCCalendarUtil requestAccess:^(BOOL granted, NSError *error) {
+        if (granted) {
+            BOOL result = [ARCCalendarUtil addEvent:newProjectStartDate withTitle:newProjectName];
+            //BOOL result = [ARCCalendarUtil addEvent:nil withTitle:nil];
+            if (result) {
+                // added to calendar
+            } else {
+                // unable to create event/calendar
+            }
+        } else {
+            // you don't have permissions to access calendars
+            NSLog(@"No permission to access calendars");
+        }
+    }];
+    
+    
+    
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
     
 }

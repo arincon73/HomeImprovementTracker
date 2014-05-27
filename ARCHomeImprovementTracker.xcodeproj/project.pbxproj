@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB85A2951935083800A8EACA /* ARCCalendarUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FB85A2941935083800A8EACA /* ARCCalendarUtil.m */; };
 		FBB502DD1923B4D1003BE2DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB502DC1923B4D1003BE2DB /* Foundation.framework */; };
 		FBB502DF1923B4D1003BE2DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB502DE1923B4D1003BE2DB /* CoreGraphics.framework */; };
 		FBB502E11923B4D1003BE2DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB502E01923B4D1003BE2DB /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB85A2931935083800A8EACA /* ARCCalendarUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCCalendarUtil.h; sourceTree = "<group>"; };
+		FB85A2941935083800A8EACA /* ARCCalendarUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCCalendarUtil.m; sourceTree = "<group>"; };
 		FBB502D91923B4D1003BE2DB /* ARCHomeImprovementTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCHomeImprovementTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB502DC1923B4D1003BE2DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FBB502DE1923B4D1003BE2DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				FBB503111923B538003BE2DB /* Storyboard.storyboard */,
+				FB85A2931935083800A8EACA /* ARCCalendarUtil.h */,
+				FB85A2941935083800A8EACA /* ARCCalendarUtil.m */,
 				FBB503161924EE6A003BE2DB /* ARCAddProjectViewController.h */,
 				FBB503171924EE6A003BE2DB /* ARCAddProjectViewController.m */,
 				FBB503131923B8E2003BE2DB /* ARCProjectListTableViewController.h */,
@@ -284,6 +289,7 @@
 			files = (
 				FBB502F21923B4D1003BE2DB /* ARCHomeImprovementTracker.xcdatamodeld in Sources */,
 				FBB503181924EE6A003BE2DB /* ARCAddProjectViewController.m in Sources */,
+				FB85A2951935083800A8EACA /* ARCCalendarUtil.m in Sources */,
 				FBB5031F192CEEDB003BE2DB /* ARCProjectDetailVC.m in Sources */,
 				FBB502EB1923B4D1003BE2DB /* main.m in Sources */,
 				FBB503151923B8E2003BE2DB /* ARCProjectListTableViewController.m in Sources */,
@@ -485,6 +491,7 @@
 				FBB5030D1923B4D1003BE2DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBB5030E1923B4D1003BE2DB /* Build configuration list for PBXNativeTarget "ARCHomeImprovementTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +500,7 @@
 				FBB503101923B4D1003BE2DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -12,6 +12,7 @@
 @interface ARCAddProjectViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *projectTextField;
 - (IBAction)addProjectButtonPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *addProjectButton;
 @property (weak, nonatomic) IBOutlet UIDatePicker *projectStartDateField;
 @property (nonatomic, weak) ARCProjectListTableViewController *projectListTableViewController;
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;

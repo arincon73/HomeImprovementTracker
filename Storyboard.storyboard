@@ -85,7 +85,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="addProjectButtonPressed:" destination="0W2-X3-0cH" eventType="touchUpInside" id="la5-EH-N00"/>
+                                    <action selector="addProjectButtonPressed:" destination="0W2-X3-0cH" eventType="touchUpInside" id="mrD-t6-Hky"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdk-bv-qOk">
@@ -141,6 +141,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="addProjectButton" destination="hIo-79-gKk" id="mVb-1F-HQ3"/>
                         <outlet property="projectStartDateField" destination="N2g-mx-Pyw" id="psn-tc-hN7"/>
                         <outlet property="projectTextField" destination="jdk-bv-qOk" id="yZl-d0-Mmp"/>
                     </connections>
