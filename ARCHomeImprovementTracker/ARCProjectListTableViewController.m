@@ -10,6 +10,7 @@
 #import "ARCAddProjectViewController.h"
 #import "ARCAppDelegate.h"
 #import "ARCProjectDetailVC.h"
+#import "ARCCalendarUtil.h"
 
 @interface ARCProjectListTableViewController ()
 
@@ -116,6 +117,8 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         Projects *tappedItem = [self.projectArray objectAtIndex:indexPath.row];
+        NSString* eventIdentifier = tappedItem.eventIdentifier;
+        
         [_managedObjectContext deleteObject:tappedItem];
         NSError *errorSaving = nil;
         if (![_managedObjectContext save:&errorSaving])
@@ -123,12 +126,15 @@
             //handle the error
             NSLog(@"Error saving while deleting item");
         }
-        
-        [projectArray removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        else {
+            if (eventIdentifier){
+                BOOL result = [ARCCalendarUtil deleteEvent:eventIdentifier];
+            }
+            [projectArray removeObjectAtIndex:indexPath.row];
+            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
 
-        NSLog(@"Deleting item");
-        
+            NSLog(@"Deleting item");
+        }
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   

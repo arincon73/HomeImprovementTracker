@@ -64,8 +64,14 @@
 
 - (IBAction)addProjectButtonPressed:(id)sender {
     
+    // Only respond to add button click
     if (sender != self.addProjectButton) return;
+    
     NSString *newProjectName = [projectTextField text];
+    
+    // Do not allow project with empty description
+    if (newProjectName.length <= 0) return;
+    
     NSDate *newProjectStartDate = [projectStartDateField date];
     
     
@@ -74,26 +80,19 @@
     [newProject setEventIdentifier:nil];
     newProject.name = newProjectName;
     newProject.startDate = newProjectStartDate;
-    NSError *errorSaving = nil;
-    if (![_managedObjectContext save:&errorSaving])
-    {
-        //handle the error
-        NSLog(@"Error saving in addProjectButtonPressed");
-    }
-
-    
-    [projectListTableViewController addProject:newProject];
-    
     
     // Add item to calendar
     [ARCCalendarUtil requestAccess:^(BOOL granted, NSError *error) {
         if (granted) {
-            BOOL result = [ARCCalendarUtil addEvent:newProjectStartDate withTitle:newProjectName];
+            NSString* result = [ARCCalendarUtil addEvent:newProjectStartDate withTitle:newProjectName];
             //BOOL result = [ARCCalendarUtil addEvent:nil withTitle:nil];
             if (result) {
                 // added to calendar
+                newProject.eventIdentifier = result;
             } else {
-                // unable to create event/calendar
+                // unable to create event/calendar set event identifier to nil, log the error
+                newProject.eventIdentifier = nil;
+                NSLog(@"Unable to create event in calendar");
             }
         } else {
             // you don't have permissions to access calendars
@@ -101,8 +100,18 @@
         }
     }];
     
+    // Save project
+    NSError *errorSaving = nil;
+    if (![_managedObjectContext save:&errorSaving])
+    {
+        //handle the error
+        NSLog(@"Error saving in addProjectButtonPressed");
+    }
     
+    // Add project to project list
+    [projectListTableViewController addProject:newProject];
     
+    // Close view
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
     
 }

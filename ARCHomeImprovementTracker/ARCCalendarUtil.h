@@ -17,5 +17,6 @@
 + (void)requestAccess:(void (^)(BOOL granted, NSError *error))success;
 + (NSString *)addEvent:(NSDate*)eventDate withTitle:(NSString*)title;
 + (NSString *)editEvent:(NSString*)eventIdentifier withTitle:(NSString*)theTitle withStartDate:(NSDate*)theStartDate;
++ (BOOL) deleteEvent:(NSString*)eventIdentifier;
 + (NSDate *)eventStartDate:(NSString*)eventIdentifier;
 @end

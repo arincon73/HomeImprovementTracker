@@ -10,7 +10,7 @@
 
 static EKEventStore *eventStore = nil;
 static EKCalendar *calendar = nil;
-static BOOL needsToRequestAccessToEventStore = YES;
+//static BOOL needsToRequestAccessToEventStore = YES;
 
 @implementation ARCCalendarUtil
 
@@ -154,6 +154,35 @@ void getEventStore(void)
         return nil;
     }
 }
+
+
++ (BOOL) deleteEvent:(NSString*)eventIdentifier
+{
+    getEventStore();
+    EKEvent *event = [eventStore eventWithIdentifier:eventIdentifier];
+    
+    if (!event)
+    {
+        return NO;
+    }
+
+    if (event != nil) {
+        NSError* error = nil;
+        BOOL eventRemoved = [eventStore removeEvent:event span:EKSpanThisEvent error:&error];
+        if (!eventRemoved){
+            NSLog(@"Unable to remove event");
+        }
+        if (error)
+        {
+            NSLog(@"Error removing event");
+        }
+        return eventRemoved;
+    }
+    
+    return NO;
+}
+
+
 
 + (NSDate *)eventStartDate:(NSString*)eventIdentifier
 {

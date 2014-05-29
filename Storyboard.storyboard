@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="-14" y="131"/>
         </scene>
-        <!--Project List Table View Controller-->
+        <!--Project List Table View Controller - Home Improvement Projects-->
         <scene sceneID="P0Y-Qs-Wbi">
             <objects>
                 <tableViewController id="Emx-Sw-xYf" customClass="ARCProjectListTableViewController" sceneMemberID="viewController">
@@ -54,10 +54,10 @@
                             <outlet property="delegate" destination="Emx-Sw-xYf" id="oDz-mu-p1J"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="0QH-co-YZ5">
+                    <navigationItem key="navigationItem" title="Home Improvement Projects" id="0QH-co-YZ5">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4oQ-0c-VEO">
                             <connections>
-                                <segue destination="0W2-X3-0cH" kind="modal" identifier="AddProjectSegue" id="sFT-2G-jsn"/>
+                                <segue destination="0W2-X3-0cH" kind="push" identifier="AddProjectSegue" id="sFT-2G-jsn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -79,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIo-79-gKk">
-                                <rect key="frame" x="117" y="313" width="81" height="30"/>
+                                <rect key="frame" x="117" y="370" width="81" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Project">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,13 +89,13 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdk-bv-qOk">
-                                <rect key="frame" x="15" y="44" width="285" height="30"/>
+                                <rect key="frame" x="15" y="105" width="285" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="N2g-mx-Pyw">
-                                <rect key="frame" x="0.0" y="111" width="320" height="162"/>
+                                <rect key="frame" x="0.0" y="172" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="421851272.86097199">
                                     <!--2014-05-15 12:54:32 +0000-->
@@ -126,13 +126,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </datePicker>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Project Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSN-VD-1Hz">
-                                <rect key="frame" x="15" y="15" width="109" height="21"/>
+                                <rect key="frame" x="15" y="76" width="109" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzE-C9-PEs">
-                                <rect key="frame" x="15" y="82" width="83" height="21"/>
+                                <rect key="frame" x="15" y="143" width="83" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
